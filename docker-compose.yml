@@ -21,6 +21,7 @@ services:
       - ./conf/fluent-bit.conf:/etc/fluent-bit/fluent-bit.conf
       - ./conf/parsers.conf:/etc/fluent-bit/parsers.conf
       - ./logs:/var/logs
+      
   loki:
     image: grafana/loki:2.9.2
     ports:
